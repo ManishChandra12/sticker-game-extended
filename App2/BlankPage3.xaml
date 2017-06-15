@@ -1,0 +1,19 @@
+﻿<Page
+    x:Class="App2.BlankPage3"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:App2"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid>
+        <TextBlock HorizontalAlignment="Left" Margin="160,170,0,0" TextWrapping="Wrap" Text="THERE ARE A TOTAL OF TEN STICKERS, FIVE YOURS AND FIVE OTHER PLAYER'S (OR  COMPUTER'S), TURNED IN SUCH A WAY THAT ITS BACK PORTION FACES US. TURN ANY STICKER AS YOU DESIRE BY PRESSING  BUTTON BELOW IT. THEN OTHER  PLAYER (OR COMPUTER) TURNS ANOTHER STICKER. IF BOTH THE STICKERS MATCH, THE     PLAYER WHO TURNS THE STICKER LATER, GETS ONE POINT . PLAYER WITH HIGHER SCORE AFTER THE TURN OF ALL  TEN STICKERS, WINS." VerticalAlignment="Top" Width="1097" Height="502" FontSize="42"/>
+        <Button x:Name="backButton" Margin="0,10,0,0" Command="{Binding NavigationHelper.GoBackCommand, ElementName=pageRoot}"
+        	Style="{StaticResource NavigationBackButtonNormalStyle}"
+        	VerticalAlignment="Top"
+        	AutomationProperties.Name="Back"
+        	AutomationProperties.AutomationId="BackButton"
+        	AutomationProperties.ItemType="Navigation Button" Height="90" Width="100" Click="backButton_Click"/>
+    </Grid>
+</Page>

@@ -1,0 +1,341 @@
+﻿<Page
+    x:Class="App2.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:App2"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+    <Page.Resources>
+        <Storyboard x:Name="Storyboard1">
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Projection).(PlaneProjection.RotationY)" Storyboard.TargetName="img01">
+                <EasingDoubleKeyFrame KeyTime="0:0:0.5" Value="-45"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:1" Value="-90"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:1.5" Value="-135"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateY)" Storyboard.TargetName="img01">
+                <EasingDoubleKeyFrame KeyTime="0:0:0.5" Value="10"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:1" Value="20"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:1.5" Value="30"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateX)" Storyboard.TargetName="img01">
+                <EasingDoubleKeyFrame KeyTime="0:0:0.5" Value="10"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:1" Value="21.493"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:1.5" Value="30"/>
+            </DoubleAnimationUsingKeyFrames>
+        </Storyboard>
+        <Storyboard x:Name="Storyboard2">
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateX)" Storyboard.TargetName="img01">
+                <EasingDoubleKeyFrame KeyTime="0:0:1.5" Value="20"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:3" Value="40"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:4.5" Value="60"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:6" Value="30"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateY)" Storyboard.TargetName="img01">
+                <EasingDoubleKeyFrame KeyTime="0:0:1.5" Value="20"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:3" Value="40"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:4.5" Value="60"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:6" Value="80"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Projection).(PlaneProjection.RotationY)" Storyboard.TargetName="img01">
+                <EasingDoubleKeyFrame KeyTime="0:0:1.5" Value="-45"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:3" Value="-90"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:4.5" Value="-135"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:6" Value="-180"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateX)" Storyboard.TargetName="img04">
+                <EasingDoubleKeyFrame KeyTime="0:0:1.5" Value="20"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:3" Value="40"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:4.5" Value="60"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:6" Value="30"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateY)" Storyboard.TargetName="img04">
+                <EasingDoubleKeyFrame KeyTime="0:0:1.5" Value="20"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:3" Value="40"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:4.5" Value="60"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:6" Value="80"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Projection).(PlaneProjection.RotationY)" Storyboard.TargetName="img04">
+                <EasingDoubleKeyFrame KeyTime="0:0:1.5" Value="45"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:3" Value="90"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:4.5" Value="135"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:6" Value="180"/>
+            </DoubleAnimationUsingKeyFrames>
+        </Storyboard>
+        <Storyboard x:Name="welcome">
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Projection).(PlaneProjection.RotationY)" Storyboard.TargetName="img04">
+                <EasingDoubleKeyFrame KeyTime="0:0:1.5" Value="45"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:3" Value="90"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:4.5" Value="135"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:6" Value="180"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateX)" Storyboard.TargetName="img04">
+                <EasingDoubleKeyFrame KeyTime="0:0:1.5" Value="90"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:3" Value="180"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:4.5" Value="270"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:6" Value="370"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateY)" Storyboard.TargetName="img04">
+                <EasingDoubleKeyFrame KeyTime="0:0:1.5" Value="50"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:3" Value="100"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:4.5" Value="150"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:6" Value="190"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateX)" Storyboard.TargetName="img01">
+                <EasingDoubleKeyFrame KeyTime="0:0:1.5" Value="90"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:3" Value="180"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:4.5" Value="270"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:6" Value="370"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateY)" Storyboard.TargetName="img01">
+                <EasingDoubleKeyFrame KeyTime="0:0:1.5" Value="50"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:3" Value="100"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:4.5" Value="150"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:6" Value="190"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Projection).(PlaneProjection.RotationY)" Storyboard.TargetName="img01">
+                <EasingDoubleKeyFrame KeyTime="0:0:1.5" Value="45"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:3" Value="90"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:4.5" Value="135"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:6" Value="180"/>
+            </DoubleAnimationUsingKeyFrames>
+            <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(TextBlock.FontFamily)" Storyboard.TargetName="present">
+            	<DiscreteObjectKeyFrame KeyTime="0">
+            		<DiscreteObjectKeyFrame.Value>
+            			<FontFamily>Global User Interface</FontFamily>
+            		</DiscreteObjectKeyFrame.Value>
+            	</DiscreteObjectKeyFrame>
+            </ObjectAnimationUsingKeyFrames>
+            <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Visibility)" Storyboard.TargetName="present">
+            	<DiscreteObjectKeyFrame KeyTime="0">
+            		<DiscreteObjectKeyFrame.Value>
+            			<Visibility>Collapsed</Visibility>
+            		</DiscreteObjectKeyFrame.Value>
+            	</DiscreteObjectKeyFrame>
+            	<DiscreteObjectKeyFrame KeyTime="0:0:6">
+            		<DiscreteObjectKeyFrame.Value>
+            			<Visibility>Visible</Visibility>
+            		</DiscreteObjectKeyFrame.Value>
+            	</DiscreteObjectKeyFrame>
+            </ObjectAnimationUsingKeyFrames>
+        </Storyboard>
+        <Storyboard x:Name="welcome2">
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateX)" Storyboard.TargetName="img5">
+                <EasingDoubleKeyFrame KeyTime="0:0:1.5" Value="-90"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:3" Value="-180"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:4.5" Value="-270"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:6" Value="-365"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateY)" Storyboard.TargetName="img5">
+                <EasingDoubleKeyFrame KeyTime="0:0:1.5" Value="-50"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:3" Value="-100"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:4.5" Value="-150"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:6" Value="-200"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Projection).(PlaneProjection.RotationY)" Storyboard.TargetName="img5">
+                <EasingDoubleKeyFrame KeyTime="0:0:1.5" Value="45"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:3" Value="90"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:4.5" Value="135"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:6" Value="180"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateX)" Storyboard.TargetName="img6">
+                <EasingDoubleKeyFrame KeyTime="0:0:1.5" Value="-90"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:3" Value="-180"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:4.5" Value="-270"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:6" Value="-365"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateY)" Storyboard.TargetName="img6">
+                <EasingDoubleKeyFrame KeyTime="0:0:1.5" Value="-50"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:3" Value="-100"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:4.5" Value="-150"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:6" Value="-200"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Projection).(PlaneProjection.RotationY)" Storyboard.TargetName="img6">
+                <EasingDoubleKeyFrame KeyTime="0:0:1.5" Value="45"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:3" Value="90"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:4.5" Value="135"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:6" Value="180"/>
+            </DoubleAnimationUsingKeyFrames>
+            <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Visibility)" Storyboard.TargetName="present">
+            	<DiscreteObjectKeyFrame KeyTime="0">
+            		<DiscreteObjectKeyFrame.Value>
+            			<Visibility>Collapsed</Visibility>
+            		</DiscreteObjectKeyFrame.Value>
+            	</DiscreteObjectKeyFrame>
+            	<DiscreteObjectKeyFrame KeyTime="0:0:6">
+            		<DiscreteObjectKeyFrame.Value>
+            			<Visibility>Visible</Visibility>
+            		</DiscreteObjectKeyFrame.Value>
+            	</DiscreteObjectKeyFrame>
+            </ObjectAnimationUsingKeyFrames>
+        </Storyboard>
+        <Storyboard x:Name="welcome_Copy1">
+        	<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Projection).(PlaneProjection.RotationY)" Storyboard.TargetName="img04">
+        		<EasingDoubleKeyFrame KeyTime="0:0:1.5" Value="45"/>
+        		<EasingDoubleKeyFrame KeyTime="0:0:3" Value="90"/>
+        		<EasingDoubleKeyFrame KeyTime="0:0:4.5" Value="135"/>
+        		<EasingDoubleKeyFrame KeyTime="0:0:6" Value="180"/>
+        	</DoubleAnimationUsingKeyFrames>
+        	<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateX)" Storyboard.TargetName="img04">
+        		<EasingDoubleKeyFrame KeyTime="0:0:1.5" Value="90"/>
+        		<EasingDoubleKeyFrame KeyTime="0:0:3" Value="180"/>
+        		<EasingDoubleKeyFrame KeyTime="0:0:4.5" Value="270"/>
+        		<EasingDoubleKeyFrame KeyTime="0:0:6" Value="370"/>
+        	</DoubleAnimationUsingKeyFrames>
+        	<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateY)" Storyboard.TargetName="img04">
+        		<EasingDoubleKeyFrame KeyTime="0:0:1.5" Value="50"/>
+        		<EasingDoubleKeyFrame KeyTime="0:0:3" Value="100"/>
+        		<EasingDoubleKeyFrame KeyTime="0:0:4.5" Value="150"/>
+        		<EasingDoubleKeyFrame KeyTime="0:0:6" Value="190"/>
+        	</DoubleAnimationUsingKeyFrames>
+        	<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateX)" Storyboard.TargetName="img01">
+        		<EasingDoubleKeyFrame KeyTime="0:0:1.5" Value="90"/>
+        		<EasingDoubleKeyFrame KeyTime="0:0:3" Value="180"/>
+        		<EasingDoubleKeyFrame KeyTime="0:0:4.5" Value="270"/>
+        		<EasingDoubleKeyFrame KeyTime="0:0:6" Value="370"/>
+        	</DoubleAnimationUsingKeyFrames>
+        	<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateY)" Storyboard.TargetName="img01">
+        		<EasingDoubleKeyFrame KeyTime="0:0:1.5" Value="50"/>
+        		<EasingDoubleKeyFrame KeyTime="0:0:3" Value="100"/>
+        		<EasingDoubleKeyFrame KeyTime="0:0:4.5" Value="150"/>
+        		<EasingDoubleKeyFrame KeyTime="0:0:6" Value="190"/>
+        	</DoubleAnimationUsingKeyFrames>
+        	<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Projection).(PlaneProjection.RotationY)" Storyboard.TargetName="img01">
+        		<EasingDoubleKeyFrame KeyTime="0:0:1.5" Value="45"/>
+        		<EasingDoubleKeyFrame KeyTime="0:0:3" Value="90"/>
+        		<EasingDoubleKeyFrame KeyTime="0:0:4.5" Value="135"/>
+        		<EasingDoubleKeyFrame KeyTime="0:0:6" Value="180"/>
+        	</DoubleAnimationUsingKeyFrames>
+        	<ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(TextBlock.FontFamily)" Storyboard.TargetName="present">
+        		<DiscreteObjectKeyFrame KeyTime="0">
+        			<DiscreteObjectKeyFrame.Value>
+        				<FontFamily>Global User Interface</FontFamily>
+        			</DiscreteObjectKeyFrame.Value>
+        		</DiscreteObjectKeyFrame>
+        	</ObjectAnimationUsingKeyFrames>
+        	<ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Visibility)" Storyboard.TargetName="present">
+        		<DiscreteObjectKeyFrame KeyTime="0">
+        			<DiscreteObjectKeyFrame.Value>
+        				<Visibility>Collapsed</Visibility>
+        			</DiscreteObjectKeyFrame.Value>
+        		</DiscreteObjectKeyFrame>
+        		<DiscreteObjectKeyFrame KeyTime="0:0:6">
+        			<DiscreteObjectKeyFrame.Value>
+        				<Visibility>Visible</Visibility>
+        			</DiscreteObjectKeyFrame.Value>
+        		</DiscreteObjectKeyFrame>
+        	</ObjectAnimationUsingKeyFrames>
+        </Storyboard>
+        <Storyboard x:Name="welcome_Copy2">
+        	<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateX)" Storyboard.TargetName="img5">
+        		<EasingDoubleKeyFrame KeyTime="0:0:1.5" Value="-90"/>
+        		<EasingDoubleKeyFrame KeyTime="0:0:3" Value="-180"/>
+        		<EasingDoubleKeyFrame KeyTime="0:0:4.5" Value="-270"/>
+        		<EasingDoubleKeyFrame KeyTime="0:0:6" Value="-365"/>
+        	</DoubleAnimationUsingKeyFrames>
+        	<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateY)" Storyboard.TargetName="img5">
+        		<EasingDoubleKeyFrame KeyTime="0:0:1.5" Value="-50"/>
+        		<EasingDoubleKeyFrame KeyTime="0:0:3" Value="-100"/>
+        		<EasingDoubleKeyFrame KeyTime="0:0:4.5" Value="-150"/>
+        		<EasingDoubleKeyFrame KeyTime="0:0:6" Value="-200"/>
+        	</DoubleAnimationUsingKeyFrames>
+        	<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Projection).(PlaneProjection.RotationY)" Storyboard.TargetName="img5">
+        		<EasingDoubleKeyFrame KeyTime="0:0:1.5" Value="45"/>
+        		<EasingDoubleKeyFrame KeyTime="0:0:3" Value="90"/>
+        		<EasingDoubleKeyFrame KeyTime="0:0:4.5" Value="135"/>
+        		<EasingDoubleKeyFrame KeyTime="0:0:6" Value="180"/>
+        	</DoubleAnimationUsingKeyFrames>
+        	<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateX)" Storyboard.TargetName="img6">
+        		<EasingDoubleKeyFrame KeyTime="0:0:1.5" Value="-90"/>
+        		<EasingDoubleKeyFrame KeyTime="0:0:3" Value="-180"/>
+        		<EasingDoubleKeyFrame KeyTime="0:0:4.5" Value="-270"/>
+        		<EasingDoubleKeyFrame KeyTime="0:0:6" Value="-365"/>
+        	</DoubleAnimationUsingKeyFrames>
+        	<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateY)" Storyboard.TargetName="img6">
+        		<EasingDoubleKeyFrame KeyTime="0:0:1.5" Value="-50"/>
+        		<EasingDoubleKeyFrame KeyTime="0:0:3" Value="-100"/>
+        		<EasingDoubleKeyFrame KeyTime="0:0:4.5" Value="-150"/>
+        		<EasingDoubleKeyFrame KeyTime="0:0:6" Value="-200"/>
+        	</DoubleAnimationUsingKeyFrames>
+        	<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Projection).(PlaneProjection.RotationY)" Storyboard.TargetName="img6">
+        		<EasingDoubleKeyFrame KeyTime="0:0:1.5" Value="45"/>
+        		<EasingDoubleKeyFrame KeyTime="0:0:3" Value="90"/>
+        		<EasingDoubleKeyFrame KeyTime="0:0:4.5" Value="135"/>
+        		<EasingDoubleKeyFrame KeyTime="0:0:6" Value="180"/>
+        	</DoubleAnimationUsingKeyFrames>
+        	<ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Visibility)" Storyboard.TargetName="present">
+        		<DiscreteObjectKeyFrame KeyTime="0">
+        			<DiscreteObjectKeyFrame.Value>
+        				<Visibility>Collapsed</Visibility>
+        			</DiscreteObjectKeyFrame.Value>
+        		</DiscreteObjectKeyFrame>
+        		<DiscreteObjectKeyFrame KeyTime="0:0:6">
+        			<DiscreteObjectKeyFrame.Value>
+        				<Visibility>Visible</Visibility>
+        			</DiscreteObjectKeyFrame.Value>
+        		</DiscreteObjectKeyFrame>
+        	</ObjectAnimationUsingKeyFrames>
+        	<ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(TextBlock.FontFamily)" Storyboard.TargetName="present">
+        		<DiscreteObjectKeyFrame KeyTime="0">
+        			<DiscreteObjectKeyFrame.Value>
+        				<FontFamily>Global User Interface</FontFamily>
+        			</DiscreteObjectKeyFrame.Value>
+        		</DiscreteObjectKeyFrame>
+        		<DiscreteObjectKeyFrame KeyTime="0:0:6">
+        			<DiscreteObjectKeyFrame.Value>
+        				<FontFamily>Global User Interface</FontFamily>
+        			</DiscreteObjectKeyFrame.Value>
+        		</DiscreteObjectKeyFrame>
+        	</ObjectAnimationUsingKeyFrames>
+        	<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateY)" Storyboard.TargetName="present">
+        		<EasingDoubleKeyFrame KeyTime="0" Value="0"/>
+        		<EasingDoubleKeyFrame KeyTime="0:0:6" Value="24"/>
+        	</DoubleAnimationUsingKeyFrames>
+        	<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateX)" Storyboard.TargetName="present">
+        		<EasingDoubleKeyFrame KeyTime="0" Value="0"/>
+        		<EasingDoubleKeyFrame KeyTime="0:0:6" Value="45"/>
+        	</DoubleAnimationUsingKeyFrames>
+        </Storyboard>
+    </Page.Resources>
+    <Grid Background="Black">
+        <Image x:Name="img04" HorizontalAlignment="Left" Height="318" Margin="117,10,0,0" VerticalAlignment="Top" Width="338" Source="Assets/pnr-status-sms-alert.png" RenderTransformOrigin="0.5,0.5">
+            <Image.Projection>
+                <PlaneProjection/>
+            </Image.Projection>
+            <Image.RenderTransform>
+                <CompositeTransform/>
+            </Image.RenderTransform>
+        </Image>
+        <Image x:Name="img01" HorizontalAlignment="Left" Height="318" Margin="117,10,0,0" VerticalAlignment="Top" Width="378" Source="Assets/pnr-status-sms-alertback.png" RenderTransformOrigin="0.46,0.47">
+            <Image.RenderTransform>
+                <CompositeTransform/>
+            </Image.RenderTransform>
+            <Image.Projection>
+                <PlaneProjection/>
+            </Image.Projection>
+        </Image>
+        <Image x:Name="img5" HorizontalAlignment="Left" Height="318" Margin="853,398,0,0" VerticalAlignment="Top" Width="378" Source="Assets/pnr-status-sms-alert.png" RenderTransformOrigin="0.5,0.5">
+            <Image.Projection>
+                <PlaneProjection/>
+            </Image.Projection>
+            <Image.RenderTransform>
+                <CompositeTransform/>
+            </Image.RenderTransform>
+        </Image>
+        <Image x:Name="img6" HorizontalAlignment="Left" Height="318" Margin="853,398,0,0" VerticalAlignment="Top" Width="378" Source="Assets/pnr-status-sms-alertback.png" RenderTransformOrigin="0.5,0.5">
+            <Image.Projection>
+                <PlaneProjection/>
+            </Image.Projection>
+            <Image.RenderTransform>
+                <CompositeTransform/>
+            </Image.RenderTransform>
+        </Image>
+        <TextBlock x:Name="present" HorizontalAlignment="Left" Margin="514,498,0,0" TextWrapping="Wrap" Text="PROUDLY PRESENTS....." VerticalAlignment="Top" Width="815" Height="218" FontSize="72" FontWeight="Bold" FontStyle="Italic" RenderTransformOrigin="0.5,0.5">
+        	<TextBlock.RenderTransform>
+        		<CompositeTransform/>
+        	</TextBlock.RenderTransform>
+        </TextBlock>
+        <MediaElement x:Name="mnd" HorizontalAlignment="Left" Height="100" Margin="184,668,0,0" VerticalAlignment="Top" Width="100"/>
+
+    </Grid>
+</Page>
